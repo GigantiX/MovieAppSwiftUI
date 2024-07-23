@@ -23,9 +23,7 @@ struct FilterComponent: View {
         .padding(.vertical, 8)
         .background(
             ZStack {
-                if isSelected {
-                    Capsule(style: .circular).fill(.colorRedDark)
-                }
+                Capsule(style: .circular).fill(.colorBlueDark).opacity(isSelected ? 1 : 0)
                 Capsule(style: .circular).stroke(lineWidth: 2)
             }
         )

@@ -20,7 +20,6 @@
 		F16444772BD7525000DCA473 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16444762BD7525000DCA473 /* HomePage.swift */; };
 		F16444792BD7525200DCA473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16444782BD7525200DCA473 /* Assets.xcassets */; };
 		F164447C2BD7525200DCA473 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F164447B2BD7525200DCA473 /* Preview Assets.xcassets */; };
-		F164448F2BD7715900DCA473 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F164448E2BD7715900DCA473 /* Lottie */; };
 		F16444912BD7941000DCA473 /* MovieLogoOrange.json in Resources */ = {isa = PBXBuildFile; fileRef = F16444902BD7941000DCA473 /* MovieLogoOrange.json */; };
 		F16444932BD7943700DCA473 /* MovieLogo.lottie in Resources */ = {isa = PBXBuildFile; fileRef = F16444922BD7943700DCA473 /* MovieLogo.lottie */; };
 		F18F166D2BFC461600070A83 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F166C2BFC461600070A83 /* SnapCarousel.swift */; };
@@ -32,6 +31,12 @@
 		F1BBF5EE2BE9D91600CE4F89 /* MovieBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BBF5ED2BE9D91500CE4F89 /* MovieBanner.swift */; };
 		F1BBF5F02BE9DE8800CE4F89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BBF5EF2BE9DE8800CE4F89 /* Constants.swift */; };
 		F1BBF5F32BEB61DE00CE4F89 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BBF5F22BEB61DE00CE4F89 /* ViewExtension.swift */; };
+		F1E0D7882C8AB30C00CB87D5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F1E0D7872C8AB30C00CB87D5 /* Lottie */; };
+		F1E0D78C2C8AFBA500CB87D5 /* SmallMovieBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D78B2C8AFBA500CB87D5 /* SmallMovieBanner.swift */; };
+		F1E0D78E2C8B136100CB87D5 /* SmallMovieCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D78D2C8B136100CB87D5 /* SmallMovieCarousel.swift */; };
+		F1E0D7942C8FF28600CB87D5 /* SearchPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D7932C8FF28600CB87D5 /* SearchPageView.swift */; };
+		F1E0D7972C8FFB6900CB87D5 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = F1E0D7962C8FFB6900CB87D5 /* SkeletonUI */; };
+		F1E0D79A2C90006900CB87D5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D7992C90006900CB87D5 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,10 @@
 		F1BBF5ED2BE9D91500CE4F89 /* MovieBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBanner.swift; sourceTree = "<group>"; };
 		F1BBF5EF2BE9DE8800CE4F89 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F1BBF5F22BEB61DE00CE4F89 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		F1E0D78B2C8AFBA500CB87D5 /* SmallMovieBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallMovieBanner.swift; sourceTree = "<group>"; };
+		F1E0D78D2C8B136100CB87D5 /* SmallMovieCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallMovieCarousel.swift; sourceTree = "<group>"; };
+		F1E0D7932C8FF28600CB87D5 /* SearchPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageView.swift; sourceTree = "<group>"; };
+		F1E0D7992C90006900CB87D5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E0D7882C8AB30C00CB87D5 /* Lottie in Frameworks */,
+				F1E0D7972C8FFB6900CB87D5 /* SkeletonUI in Frameworks */,
 				F15B7BB72BF7122700DA5799 /* Kingfisher in Frameworks */,
 				F15B7BC12BF735D800DA5799 /* Alamofire in Frameworks */,
 				F15B7BC82BF7489900DA5799 /* RxSwift in Frameworks */,
 				F15B7BB12BF5C59300DA5799 /* SwiftfulUI in Frameworks */,
-				F164448F2BD7715900DCA473 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,7 @@
 			children = (
 				F15B7BB32BF611BD00DA5799 /* MovieCarousel.swift */,
 				F18F166C2BFC461600070A83 /* SnapCarousel.swift */,
+				F1E0D78D2C8B136100CB87D5 /* SmallMovieCarousel.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 		F1BBF5DD2BE396FD00CE4F89 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				F1E0D78F2C8FF21100CB87D5 /* SearchPage */,
 				F15B7BBA2BF7354F00DA5799 /* GeneralModel */,
 				F1BBF5E42BE8B34B00CE4F89 /* Components */,
 				F1BBF5DF2BE3972100CE4F89 /* HomePage */,
@@ -162,6 +174,7 @@
 		F1BBF5DE2BE3970900CE4F89 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F1E0D7982C90003900CB87D5 /* Navigation */,
 				F1BBF5F12BEB61CB00CE4F89 /* Extension */,
 			);
 			path = Helper;
@@ -233,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				F1BBF5ED2BE9D91500CE4F89 /* MovieBanner.swift */,
+				F1E0D78B2C8AFBA500CB87D5 /* SmallMovieBanner.swift */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -243,6 +257,46 @@
 				F1BBF5F22BEB61DE00CE4F89 /* ViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F1E0D78F2C8FF21100CB87D5 /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D7922C8FF26800CB87D5 /* ViewModel */,
+				F1E0D7912C8FF26200CB87D5 /* View */,
+				F1E0D7902C8FF25300CB87D5 /* Model */,
+			);
+			path = SearchPage;
+			sourceTree = "<group>";
+		};
+		F1E0D7902C8FF25300CB87D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1E0D7912C8FF26200CB87D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D7932C8FF28600CB87D5 /* SearchPageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1E0D7922C8FF26800CB87D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1E0D7982C90003900CB87D5 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D7992C90006900CB87D5 /* Router.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,11 +316,12 @@
 			);
 			name = FirstMonthSwiftUI;
 			packageProductDependencies = (
-				F164448E2BD7715900DCA473 /* Lottie */,
 				F15B7BB02BF5C59300DA5799 /* SwiftfulUI */,
 				F15B7BB62BF7122700DA5799 /* Kingfisher */,
 				F15B7BC02BF735D800DA5799 /* Alamofire */,
 				F15B7BC72BF7489900DA5799 /* RxSwift */,
+				F1E0D7872C8AB30C00CB87D5 /* Lottie */,
+				F1E0D7962C8FFB6900CB87D5 /* SkeletonUI */,
 			);
 			productName = FirstMonthSwiftUI;
 			productReference = F16444712BD7525000DCA473 /* FirstMonthSwiftUI.app */;
@@ -297,11 +352,12 @@
 			);
 			mainGroup = F16444682BD7525000DCA473;
 			packageReferences = (
-				F164448D2BD7715900DCA473 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				F15B7BAF2BF5C59300DA5799 /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
 				F15B7BB52BF7122700DA5799 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				F15B7BBF2BF735D800DA5799 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F15B7BC62BF7489900DA5799 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F1E0D7862C8AB30B00CB87D5 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				F1E0D7952C8FFB6900CB87D5 /* XCRemoteSwiftPackageReference "SkeletonUI" */,
 			);
 			productRefGroup = F16444722BD7525000DCA473 /* Products */;
 			projectDirPath = "";
@@ -338,8 +394,12 @@
 				F16444772BD7525000DCA473 /* HomePage.swift in Sources */,
 				F15B7BC32BF73ACF00DA5799 /* MovieAPIService.swift in Sources */,
 				F1BBF5EE2BE9D91600CE4F89 /* MovieBanner.swift in Sources */,
+				F1E0D7942C8FF28600CB87D5 /* SearchPageView.swift in Sources */,
 				F19AD8842C11BA150045AF49 /* APIEndpoint.swift in Sources */,
+				F1E0D79A2C90006900CB87D5 /* Router.swift in Sources */,
 				F15B7BB92BF734D000DA5799 /* HomePageViewModel.swift in Sources */,
+				F1E0D78C2C8AFBA500CB87D5 /* SmallMovieBanner.swift in Sources */,
+				F1E0D78E2C8B136100CB87D5 /* SmallMovieCarousel.swift in Sources */,
 				F1BBF5E92BE8DAEE00CE4F89 /* FilterBar.swift in Sources */,
 				F1BBF5F02BE9DE8800CE4F89 /* Constants.swift in Sources */,
 				F16444752BD7525000DCA473 /* FirstMonthSwiftUIApp.swift in Sources */,
@@ -586,12 +646,20 @@
 				minimumVersion = 6.7.1;
 			};
 		};
-		F164448D2BD7715900DCA473 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		F1E0D7862C8AB30B00CB87D5 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.4.3;
+				minimumVersion = 4.5.0;
+			};
+		};
+		F1E0D7952C8FFB6900CB87D5 /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CSolanaM/SkeletonUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -617,10 +685,15 @@
 			package = F15B7BC62BF7489900DA5799 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		F164448E2BD7715900DCA473 /* Lottie */ = {
+		F1E0D7872C8AB30C00CB87D5 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F164448D2BD7715900DCA473 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = F1E0D7862C8AB30B00CB87D5 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		F1E0D7962C8FFB6900CB87D5 /* SkeletonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E0D7952C8FFB6900CB87D5 /* XCRemoteSwiftPackageReference "SkeletonUI" */;
+			productName = SkeletonUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

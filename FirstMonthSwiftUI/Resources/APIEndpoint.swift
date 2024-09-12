@@ -23,6 +23,7 @@ struct APIConfig {
 
 enum APIEndpoint {
     case popular(page: Int)
+    case upcoming(page: Int)
     case nowPlaying(page: Int)
     case topRated(page: Int)
     case search(query: String, page: Int)
@@ -31,7 +32,9 @@ enum APIEndpoint {
     var url: String {
         switch self {
         case .popular(let page):
-            return "\(APIConfig.baseURL)/popular?language=en-US&page=1\(page)"
+            return "\(APIConfig.baseURL)/popular?language=en-US&page=\(page)"
+        case .upcoming(let page):
+            return "\(APIConfig.baseURL)/upcoming?language=en-US&page=\(page)"
         case .nowPlaying(let page):
             return "\(APIConfig.baseURL)/now_playing?language=en-US&page=\(page)"
         case .topRated(let page):

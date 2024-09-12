@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftfulUI
+import SkeletonUI
 
 struct HomePage: View {
     
@@ -15,6 +16,7 @@ struct HomePage: View {
     @State private var headerSize: CGSize  = .zero
     @State var currentIndex : Int = 0
     
+    @EnvironmentObject var router: Router
     
     @StateObject private var viewModel = HomePageViewModel()
     
@@ -29,17 +31,40 @@ struct HomePage: View {
                         .frame(height: headerSize.height)
                     
                     VStack {
-                        if viewModel.isLoading {
+                        
+                        if viewModel.isLoadingMovieNP {
                             ProgressView()
                         } else {
-                            MovieCarousel(data: viewModel.data)
+                            MovieCarousel(data: viewModel.dataMovieNP)
                         }
                     }.onAppear {
-                        viewModel.fetchPopularData()
+                        viewModel.fetchMovieNowPlaying()
                     }
-                    .padding(.vertical, 30)
+                    .padding(.top, 30)
                     
-                    ForEach(0..<10) { num in
+                    HStack(alignment: .top) {
+                        Text("Upcoming Movies")
+                            .foregroundStyle(.white)
+                            .bold()
+                            .padding(.horizontal, 10)
+                            .font(.title2)
+                        
+                        Spacer()
+                    }
+                    
+                    VStack {
+                        if viewModel.isLoadingMovieUpcoming {
+                            ProgressView()
+                        } else {
+                            SmallMovieCarousel(data: viewModel.dataMovieUpcoming)
+                        }
+                    }.onAppear {
+                        viewModel.fetchMovieUpcoming()
+                    }
+                    .padding(.vertical, 10)
+                    
+                    
+                    ForEach(0..<4) { num in
                         Rectangle()
                             .fill(.red)
                             .frame(height: 200)
@@ -76,15 +101,23 @@ struct HomePage: View {
             Image(Constants.tmdbLogo).resizable().scaledToFit() .frame(maxWidth: 50, alignment: .leading)
             Spacer()
             HStack(spacing: 15) {
-                Image(systemName: "magnifyingglass").resizable().frame(width: 25, height: 25)
-                Image(systemName: "person.circle").resizable().frame(width: 30, height: 30)
+                Button(action: {
+                    router.navigateTo(to: .searchPage)
+                }) {
+                    Image(systemName: "magnifyingglass").resizable().frame(width: 25, height: 25)
+                }.buttonStyle(PlainButtonStyle())
+                Button(action: {
+                    
+                }) {
+                    Image(systemName: "person.circle").resizable().frame(width: 30, height: 30)
+                }
             }
         }
     }
 }
 
-#Preview {
-    HomePage()
-}
+//#Preview {
+//    HomePage()
+//}
 
 

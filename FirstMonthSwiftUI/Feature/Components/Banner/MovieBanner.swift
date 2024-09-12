@@ -68,6 +68,7 @@ struct MovieBanner: View {
                     .onTapGesture {
                         onPlayPress?()
                         bottomSheet.toggle()
+                        isShow.toggle()
                     }
                     HStack {
                         Image(systemName: "plus")
@@ -82,6 +83,7 @@ struct MovieBanner: View {
                     .onTapGesture {
                         onAddListPress?()
                         bottomSheet.toggle()
+                        isShow.toggle()
                     }
                 }
                 .padding(.horizontal, 20)
@@ -89,14 +91,15 @@ struct MovieBanner: View {
                 .fontWeight(.medium)
             }
             .sheet(isPresented: $isShow, content: {
-                MovieDetail()
+                MovieDetail(movieData: movieDummy)
                     .presentationDetents([.height(400), .height(600)])
+                    .background(Color.black)
             })
             .padding(.vertical, 20)
             .background(
                 LinearGradient(
                     colors: [
-                        .black.opacity(0.05),
+                        .black.opacity(0.01),
                         .black.opacity(0.6),
                         .black.opacity(0.8)
                     ],

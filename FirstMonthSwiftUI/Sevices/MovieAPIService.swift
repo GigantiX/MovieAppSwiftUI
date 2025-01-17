@@ -10,7 +10,7 @@ import Alamofire
 import RxSwift
 
 class MovieAPIService {
-    func fetchMovie(link: String, tokern: String) -> Observable<[MovieModel]> {
+    func fetchMovie(link: String, token: String) -> Observable<[MovieModel]> {
         return Observable.create { observer in
             let request = AF.request(link, method: .get, headers: Constants.header).responseDecodable(of: MovieAPIResult.self) { response in
                 switch response.result {

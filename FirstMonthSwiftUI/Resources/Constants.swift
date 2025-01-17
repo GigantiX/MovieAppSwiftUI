@@ -48,5 +48,6 @@ class Constants {
         static let genreID = [878, 28, 12]
         static let descMovie = "Ethan Hunt and his IMF team embark on their most dangerous mission yet: To track down a terrifying new weapon that threatens all of humanity before it falls into the wrong hands. With control of the future and the world's fate at stake and dark forces from Ethan's past closing in, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan must consider that nothing can matter more than his mission—not even the lives of those he cares about most."
         static let dummyData = MovieModel(movieId: 823464, movieName: "Godzilla x Kong: The New Empire", movieDate: "2024-03-27", movieGenre: [878, 28, 12], movieDesc: "Following their explosive showdown, Godzilla and Kong must reunite against a colossal undiscovered threat hidden within our world, challenging their very existence – and our own.", movieScore: 7.176, moviePoster: "/tMefBSflR6PGQLv7WvFPpKLZkyk.jpg", movieBackdrops: "/j3Z3XktmWB1VhsS8iXNcrR86PXi.jpg")
+        
     }
 }

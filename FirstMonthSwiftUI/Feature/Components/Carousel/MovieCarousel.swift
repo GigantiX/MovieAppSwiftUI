@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MovieCarousel: View {
-    @State var data: [MovieModel] = []
+    @State var data: [UniversalModel] = []
     
     var onClick: (() -> Void)? = nil
     
@@ -54,6 +54,6 @@ struct MovieCarousel: View {
     }
 }
 
-#Preview {
-    MovieCarousel()
-}
+//#Preview {
+//    MovieCarousel()
+//}

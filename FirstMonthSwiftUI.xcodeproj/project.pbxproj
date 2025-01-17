@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1421AA12CB67909006160FE /* GridMovieCarousell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1421AA02CB67909006160FE /* GridMovieCarousell.swift */; };
 		F15B7BB12BF5C59300DA5799 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = F15B7BB02BF5C59300DA5799 /* SwiftfulUI */; };
 		F15B7BB42BF611BD00DA5799 /* MovieCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B7BB32BF611BD00DA5799 /* MovieCarousel.swift */; };
 		F15B7BB72BF7122700DA5799 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F15B7BB62BF7122700DA5799 /* Kingfisher */; };
@@ -22,6 +23,7 @@
 		F164447C2BD7525200DCA473 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F164447B2BD7525200DCA473 /* Preview Assets.xcassets */; };
 		F16444912BD7941000DCA473 /* MovieLogoOrange.json in Resources */ = {isa = PBXBuildFile; fileRef = F16444902BD7941000DCA473 /* MovieLogoOrange.json */; };
 		F16444932BD7943700DCA473 /* MovieLogo.lottie in Resources */ = {isa = PBXBuildFile; fileRef = F16444922BD7943700DCA473 /* MovieLogo.lottie */; };
+		F173A4482D12AA9B00CF5150 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F173A4472D12AA9B00CF5150 /* ShimmerEffect.swift */; };
 		F18F166D2BFC461600070A83 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F166C2BFC461600070A83 /* SnapCarousel.swift */; };
 		F18F16722BFDA92E00070A83 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F16712BFDA92E00070A83 /* MovieDetail.swift */; };
 		F19AD8842C11BA150045AF49 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AD8832C11BA150045AF49 /* APIEndpoint.swift */; };
@@ -35,11 +37,17 @@
 		F1E0D78C2C8AFBA500CB87D5 /* SmallMovieBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D78B2C8AFBA500CB87D5 /* SmallMovieBanner.swift */; };
 		F1E0D78E2C8B136100CB87D5 /* SmallMovieCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D78D2C8B136100CB87D5 /* SmallMovieCarousel.swift */; };
 		F1E0D7942C8FF28600CB87D5 /* SearchPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D7932C8FF28600CB87D5 /* SearchPageView.swift */; };
-		F1E0D7972C8FFB6900CB87D5 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = F1E0D7962C8FFB6900CB87D5 /* SkeletonUI */; };
 		F1E0D79A2C90006900CB87D5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D7992C90006900CB87D5 /* Router.swift */; };
+		F1E0D79C2C92C98B00CB87D5 /* UniversalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D79B2C92C98B00CB87D5 /* UniversalModel.swift */; };
+		F1E0D79F2C92D2C800CB87D5 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = F1E0D79E2C92D2C800CB87D5 /* Shimmer */; };
+		F1E0D7A12C92E25800CB87D5 /* UniversalModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D7A02C92E25800CB87D5 /* UniversalModelAPI.swift */; };
+		F1E0D7A32C93EAC200CB87D5 /* UniversalAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D7A22C93EAC200CB87D5 /* UniversalAPIService.swift */; };
+		F1E0D7A72C99816B00CB87D5 /* TabItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D7A62C99816B00CB87D5 /* TabItems.swift */; };
+		F1E0D7A92C99820700CB87D5 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D7A82C99820700CB87D5 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1421AA02CB67909006160FE /* GridMovieCarousell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMovieCarousell.swift; sourceTree = "<group>"; };
 		F15B7BB32BF611BD00DA5799 /* MovieCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCarousel.swift; sourceTree = "<group>"; };
 		F15B7BB82BF734D000DA5799 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 		F15B7BBB2BF7357B00DA5799 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
@@ -52,6 +60,7 @@
 		F164447B2BD7525200DCA473 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F16444902BD7941000DCA473 /* MovieLogoOrange.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieLogoOrange.json; sourceTree = "<group>"; };
 		F16444922BD7943700DCA473 /* MovieLogo.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = MovieLogo.lottie; sourceTree = "<group>"; };
+		F173A4472D12AA9B00CF5150 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		F18F166C2BFC461600070A83 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
 		F18F16712BFDA92E00070A83 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		F19AD8832C11BA150045AF49 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
@@ -65,6 +74,11 @@
 		F1E0D78D2C8B136100CB87D5 /* SmallMovieCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallMovieCarousel.swift; sourceTree = "<group>"; };
 		F1E0D7932C8FF28600CB87D5 /* SearchPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageView.swift; sourceTree = "<group>"; };
 		F1E0D7992C90006900CB87D5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F1E0D79B2C92C98B00CB87D5 /* UniversalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalModel.swift; sourceTree = "<group>"; };
+		F1E0D7A02C92E25800CB87D5 /* UniversalModelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalModelAPI.swift; sourceTree = "<group>"; };
+		F1E0D7A22C93EAC200CB87D5 /* UniversalAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPIService.swift; sourceTree = "<group>"; };
+		F1E0D7A62C99816B00CB87D5 /* TabItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItems.swift; sourceTree = "<group>"; };
+		F1E0D7A82C99820700CB87D5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E0D79F2C92D2C800CB87D5 /* Shimmer in Frameworks */,
 				F1E0D7882C8AB30C00CB87D5 /* Lottie in Frameworks */,
-				F1E0D7972C8FFB6900CB87D5 /* SkeletonUI in Frameworks */,
 				F15B7BB72BF7122700DA5799 /* Kingfisher in Frameworks */,
 				F15B7BC12BF735D800DA5799 /* Alamofire in Frameworks */,
 				F15B7BC82BF7489900DA5799 /* RxSwift in Frameworks */,
@@ -90,6 +104,7 @@
 				F15B7BB32BF611BD00DA5799 /* MovieCarousel.swift */,
 				F18F166C2BFC461600070A83 /* SnapCarousel.swift */,
 				F1E0D78D2C8B136100CB87D5 /* SmallMovieCarousel.swift */,
+				F1421AA02CB67909006160FE /* GridMovieCarousell.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -99,6 +114,8 @@
 			children = (
 				F15B7BBB2BF7357B00DA5799 /* MovieModel.swift */,
 				F15B7BBD2BF7358C00DA5799 /* MovieModelAPI.swift */,
+				F1E0D79B2C92C98B00CB87D5 /* UniversalModel.swift */,
+				F1E0D7A02C92E25800CB87D5 /* UniversalModelAPI.swift */,
 			);
 			path = GeneralModel;
 			sourceTree = "<group>";
@@ -163,6 +180,7 @@
 		F1BBF5DD2BE396FD00CE4F89 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				F1E0D7A52C99812000CB87D5 /* TabBar */,
 				F1E0D78F2C8FF21100CB87D5 /* SearchPage */,
 				F15B7BBA2BF7354F00DA5799 /* GeneralModel */,
 				F1BBF5E42BE8B34B00CE4F89 /* Components */,
@@ -218,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				F15B7BC22BF73ACF00DA5799 /* MovieAPIService.swift */,
+				F1E0D7A22C93EAC200CB87D5 /* UniversalAPIService.swift */,
 			);
 			path = Sevices;
 			sourceTree = "<group>";
@@ -254,6 +273,7 @@
 		F1BBF5F12BEB61CB00CE4F89 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F173A4472D12AA9B00CF5150 /* ShimmerEffect.swift */,
 				F1BBF5F22BEB61DE00CE4F89 /* ViewExtension.swift */,
 			);
 			path = Extension;
@@ -299,6 +319,15 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F1E0D7A52C99812000CB87D5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D7A62C99816B00CB87D5 /* TabItems.swift */,
+				F1E0D7A82C99820700CB87D5 /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,7 +350,7 @@
 				F15B7BC02BF735D800DA5799 /* Alamofire */,
 				F15B7BC72BF7489900DA5799 /* RxSwift */,
 				F1E0D7872C8AB30C00CB87D5 /* Lottie */,
-				F1E0D7962C8FFB6900CB87D5 /* SkeletonUI */,
+				F1E0D79E2C92D2C800CB87D5 /* Shimmer */,
 			);
 			productName = FirstMonthSwiftUI;
 			productReference = F16444712BD7525000DCA473 /* FirstMonthSwiftUI.app */;
@@ -357,7 +386,7 @@
 				F15B7BBF2BF735D800DA5799 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F15B7BC62BF7489900DA5799 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				F1E0D7862C8AB30B00CB87D5 /* XCRemoteSwiftPackageReference "lottie-spm" */,
-				F1E0D7952C8FFB6900CB87D5 /* XCRemoteSwiftPackageReference "SkeletonUI" */,
+				F1E0D79D2C92D2C800CB87D5 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 			);
 			productRefGroup = F16444722BD7525000DCA473 /* Products */;
 			projectDirPath = "";
@@ -394,16 +423,23 @@
 				F16444772BD7525000DCA473 /* HomePage.swift in Sources */,
 				F15B7BC32BF73ACF00DA5799 /* MovieAPIService.swift in Sources */,
 				F1BBF5EE2BE9D91600CE4F89 /* MovieBanner.swift in Sources */,
+				F1421AA12CB67909006160FE /* GridMovieCarousell.swift in Sources */,
 				F1E0D7942C8FF28600CB87D5 /* SearchPageView.swift in Sources */,
+				F1E0D7A12C92E25800CB87D5 /* UniversalModelAPI.swift in Sources */,
 				F19AD8842C11BA150045AF49 /* APIEndpoint.swift in Sources */,
+				F1E0D7A72C99816B00CB87D5 /* TabItems.swift in Sources */,
 				F1E0D79A2C90006900CB87D5 /* Router.swift in Sources */,
+				F1E0D79C2C92C98B00CB87D5 /* UniversalModel.swift in Sources */,
 				F15B7BB92BF734D000DA5799 /* HomePageViewModel.swift in Sources */,
 				F1E0D78C2C8AFBA500CB87D5 /* SmallMovieBanner.swift in Sources */,
+				F173A4482D12AA9B00CF5150 /* ShimmerEffect.swift in Sources */,
 				F1E0D78E2C8B136100CB87D5 /* SmallMovieCarousel.swift in Sources */,
 				F1BBF5E92BE8DAEE00CE4F89 /* FilterBar.swift in Sources */,
 				F1BBF5F02BE9DE8800CE4F89 /* Constants.swift in Sources */,
 				F16444752BD7525000DCA473 /* FirstMonthSwiftUIApp.swift in Sources */,
+				F1E0D7A92C99820700CB87D5 /* MainTabView.swift in Sources */,
 				F15B7BBE2BF7358C00DA5799 /* MovieModelAPI.swift in Sources */,
+				F1E0D7A32C93EAC200CB87D5 /* UniversalAPIService.swift in Sources */,
 				F18F16722BFDA92E00070A83 /* MovieDetail.swift in Sources */,
 				F1BBF5F32BEB61DE00CE4F89 /* ViewExtension.swift in Sources */,
 				F1BBF5E62BE8B3E600CE4F89 /* FilterComponent.swift in Sources */,
@@ -654,12 +690,12 @@
 				minimumVersion = 4.5.0;
 			};
 		};
-		F1E0D7952C8FFB6900CB87D5 /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
+		F1E0D79D2C92D2C800CB87D5 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CSolanaM/SkeletonUI.git";
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.2;
+				minimumVersion = 1.5.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -690,10 +726,10 @@
 			package = F1E0D7862C8AB30B00CB87D5 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
 		};
-		F1E0D7962C8FFB6900CB87D5 /* SkeletonUI */ = {
+		F1E0D79E2C92D2C800CB87D5 /* Shimmer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F1E0D7952C8FFB6900CB87D5 /* XCRemoteSwiftPackageReference "SkeletonUI" */;
-			productName = SkeletonUI;
+			package = F1E0D79D2C92D2C800CB87D5 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,5 +1,5 @@
 {
-  "originHash" : "90f14d1df2fbd44139aadb8d5e8ee83fe103cfe1abfd16c966bd8fe45a87ed46",
+  "originHash" : "66ac437b203770b080a63bca8d5d88af225f4b2bc863a384714ad5335e04ad4b",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -38,33 +38,6 @@
       }
     },
     {
-      "identity" : "skeletonui",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/CSolanaM/SkeletonUI.git",
-      "state" : {
-        "revision" : "f025e9ba5d051374d7344efa8859df5b9399a181",
-        "version" : "2.0.2"
-      }
-    },
-    {
-      "identity" : "swift-snapshot-testing",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/pointfreeco/swift-snapshot-testing",
-      "state" : {
-        "revision" : "6d932a79e7173b275b96c600c86c603cf84f153c",
-        "version" : "1.17.4"
-      }
-    },
-    {
-      "identity" : "swift-syntax",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/swiftlang/swift-syntax",
-      "state" : {
-        "revision" : "515f79b522918f83483068d99c68daeb5116342d",
-        "version" : "600.0.0-prerelease-2024-09-04"
-      }
-    },
-    {
       "identity" : "swiftfulrecursiveui",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SwiftfulThinking/SwiftfulRecursiveUI.git",
@@ -80,6 +53,15 @@
       "state" : {
         "revision" : "7e6e2d1c29d05e1519f2f5a2ce6012fe4e4dfa19",
         "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "swiftui-shimmer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markiv/SwiftUI-Shimmer.git",
+      "state" : {
+        "revision" : "0226e21f9bf355d40e07e5f5e1c33679d50e167f",
+        "version" : "1.5.1"
       }
     }
   ],

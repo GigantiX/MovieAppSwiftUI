@@ -7,13 +7,16 @@
 
 import SwiftUI
 import SwiftfulUI
-import SkeletonUI
+import Shimmer
 
 struct HomePage: View {
     
     @State private var filters = FilterModel.filterData
     @State private var selectedFilter: FilterModel? = nil
     @State private var headerSize: CGSize  = .zero
+    @State private var asd = ""
+    @State private var isload = true
+    @State var isLoading: Bool = false
     @State var currentIndex : Int = 0
     
     @EnvironmentObject var router: Router
@@ -33,7 +36,10 @@ struct HomePage: View {
                     VStack {
                         
                         if viewModel.isLoadingMovieNP {
-                            ProgressView()
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(.white)
+                                .frame(width: 280, height: 470)
+                                .shimmering()
                         } else {
                             MovieCarousel(data: viewModel.dataMovieNP)
                         }
@@ -43,31 +49,56 @@ struct HomePage: View {
                     .padding(.top, 30)
                     
                     HStack(alignment: .top) {
-                        Text("Upcoming Movies")
+                        Spacer().frame(width: 20)
+                        Text("Upcoming")
                             .foregroundStyle(.white)
                             .bold()
-                            .padding(.horizontal, 10)
+                            .padding(.top, 20)
                             .font(.title2)
+                            .skeleton(isVisible: viewModel.isLoading)
                         
                         Spacer()
                     }
                     
                     VStack {
                         if viewModel.isLoadingMovieUpcoming {
-                            ProgressView()
+                            HStack {
+                                ForEach(0..<3) { _ in
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .fill(.white)
+                                        .frame(width: 120, height: 180)
+                                        .shimmering()
+                                }
+                            }
                         } else {
-                            SmallMovieCarousel(data: viewModel.dataMovieUpcoming)
+                            SmallMovieCarousel(data: viewModel.dataTV)
                         }
                     }.onAppear {
                         viewModel.fetchMovieUpcoming()
                     }
                     .padding(.vertical, 10)
                     
-                    
-                    ForEach(0..<4) { num in
-                        Rectangle()
-                            .fill(.red)
-                            .frame(height: 200)
+                    HStack(alignment: .top) {
+                        Text("Popular")
+                            .foregroundStyle(.white)
+                            .bold()
+                            .padding(.horizontal, 10)
+                            .padding(.top, 20)
+                            .font(.title2)
+                        
+                        Spacer()
+                    }
+                    if viewModel.isLoadingMovieUpcoming {
+                        HStack {
+                            ForEach(0..<2) { _ in
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(.white)
+                                    .frame(width: 120, height: 180)
+                                    .shimmering()
+                            }
+                        }
+                    } else {
+                        GridMovieCarousell(movies: viewModel.dataMovieNP)
                     }
                 }
             }
@@ -98,16 +129,11 @@ struct HomePage: View {
     
     private var header: some View {
         HStack {
-            Image(Constants.tmdbLogo).resizable().scaledToFit() .frame(maxWidth: 50, alignment: .leading)
+            Image(Constants.tmdbLogo).resizable().scaledToFit() .frame(maxWidth: 50, alignment: .leading).skeleton(isVisible: viewModel.isLoading)
             Spacer()
             HStack(spacing: 15) {
                 Button(action: {
-                    router.navigateTo(to: .searchPage)
-                }) {
-                    Image(systemName: "magnifyingglass").resizable().frame(width: 25, height: 25)
-                }.buttonStyle(PlainButtonStyle())
-                Button(action: {
-                    
+                    viewModel.isLoading.toggle()
                 }) {
                     Image(systemName: "person.circle").resizable().frame(width: 30, height: 30)
                 }
@@ -116,8 +142,8 @@ struct HomePage: View {
     }
 }
 
-//#Preview {
-//    HomePage()
-//}
+#Preview {
+    HomePage()
+}
 
 

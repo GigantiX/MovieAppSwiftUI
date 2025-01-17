@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct FirstMonthSwiftUIApp: App {
-    @ObservedObject var router = Router()
+    @StateObject var router = Router()
     
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.path) {
-                HomePage().navigationDestination(for: Router.Destination.self) { destination in
+                MainTabView().navigationDestination(for: Router.Destination.self) { destination in
                     switch destination {
                     case .searchPage:
                         SearchPageView()

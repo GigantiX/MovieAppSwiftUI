@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct MovieBanner: View {
-    var movieDummy: MovieModel = Constants.MovieResource.dummyData
+    var movieDummy: UniversalModel
     var onPlayPress: (() -> Void)? = nil
     var onAddListPress: (() -> Void)? = nil
     var isMovie = true
@@ -23,7 +23,7 @@ struct MovieBanner: View {
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            KFImage(URL(string: "\(Constants.baseImg)\(Constants.smallImg)\(movieDummy.moviePoster)"))
+            KFImage(URL(string: "\(Constants.baseImg)\(Constants.smallImg)\(movieDummy.posterPath ?? "")"))
                 .resizable()
                 .scaledToFill()
             VStack(spacing: 17) {
@@ -36,7 +36,7 @@ struct MovieBanner: View {
                             .fontWeight(.semibold)
                             .foregroundStyle(.colorWhiteGrey)
                     }
-                    Text(movieDummy.movieName)
+                    Text(movieDummy.originalTitle ?? movieDummy.originalName ?? "Unknown Movie")
                         .font(.system(size: 25, weight: .medium, design: .serif))
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.white)
@@ -116,11 +116,10 @@ struct MovieBanner: View {
     }
 }
 
-#Preview {
-    ZStack {
-        Color.black.ignoresSafeArea()
-        MovieBanner()
-            .padding(40)
-    }
-    
-}
+//#Preview {
+//    ZStack {
+//        Color.black.ignoresSafeArea()
+//        MovieBanner(movieDummy: <#UniversalModel#>)
+//            .padding(40)
+//    }
+//}
